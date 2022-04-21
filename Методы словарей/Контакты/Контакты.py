@@ -10,16 +10,20 @@ other_phonebook = {
 }
 
 phonebook.update(other_phonebook)
-print(phonebook)
+print('Объединение словарей:\n', phonebook)
+print()
 
 phonebook['Гоша'] = phonebook.pop('Игорь')
-print(phonebook)
+print('Замена ключа: Гоша на Игорь\n', phonebook)
+print()
 
 phonebook.pop('Гоша')
-print(phonebook)
+print('pop(Гоша) - Удалил ключ и значение Гоша:\n', phonebook)
+print()
 
 phonebook.update({'Гарик': 1500})
-print(phonebook)
+print('update({Гарик: 1500}) - Добавил ключ и значение Гарик:\n', phonebook)
+print()
 
-print(phonebook.get('Гарик'))  # 1500
+print('get(Гарик)) - показывает значение ключа Гарик =', phonebook.get('Гарик'))  # 1500
 print(phonebook.get('Гоша'))  # None
